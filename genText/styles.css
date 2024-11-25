@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: radial-gradient(circle, #30245d, rgb(97, 80, 146), #8373B0);
+    color: #F5ECCD;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(180deg, #46376d,#544480, #8373B0, #bcb382);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #271345;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    rotate: 2deg;
+    transition: ease 0.5s;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #47396a; 
+    color: #ECDD96;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px #271345;
+}
+
+h1 {
+    color:#ECDD96;
+    font-size: 25px;
+    margin-bottom: 12px;
+
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#textgpt {
+    text-align: justify;
+    display: inline-block;
+    margin-left: 5px;
+    color: #F5ECCD;
+    font-weight: normal;
+}

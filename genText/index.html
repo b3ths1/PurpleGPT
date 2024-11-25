@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="id" class="container">
+        <h1>Task: Create a logo for a new ChatGPT version</h1>
+        <div class="logo-header">
+            <img src="purpleguy.gif" alt="Logo" class="logo">
+            <h2><strong>PurpleGPT:</strong><span id="textgpt"></span></h2>
+        </div>
+        <button id="startButton">START</button>
+    </div>
+
+    <script>
+        const counterElement = document.getElementById("textgpt");
+        const startButton = document.getElementById("startButton");
+        let text = `It seems that there was an issue with generating the image. Let me try again! I'll create a new, detailed prompt for the logo design.<br> It seems that there are some issues with generating the logo at the moment.<br>While I can't create it directly right now, you can consider collaborating with a graphic designer who could bring this vision to life. The concept could include a minimalist human face with digital elements to represent the fusion of human intelligence and AI, combined with futuristic colors like blue and silver.`;
+        let arr = text.split(' ');
+        let rot = 0;
+        startButton.addEventListener("click", () => {
+            for (let i = 0; i <= arr.length - 1; i++) {
+                setTimeout(() => counterElement.innerHTML += ` ${arr[i]}`, i * 50);
+            }
+            rot+=360;//sasho beshe tuk
+            document.getElementById("id").style.rotate= `-${rot}deg`; 
+        });
+    </script>
+</body>
+</html>
